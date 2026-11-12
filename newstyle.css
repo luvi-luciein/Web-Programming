@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "menu content content1"
+    "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3px;
+  background-color: #e6cc25;
+  padding: 5px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.container div {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container div.menu {
+  grid-area: menu;
+}
+.container div.content {
+  grid-area: content;
+}
+.container div.content1 {
+  grid-area: content1;
+}
+.container div.footer {
+  grid-area: footer;
+  text-align: center;
+}
+.content h3,.content p {
+  text-align: center;
+}
+.container div.content1 {
+  grid-area: content1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content1 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="newstyle.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h2>Header</h2>
+  </div>
+
+  <div class="menu">
+    <a href="#">Link 1</a><br>
+    <a href="#">Link 2</a><br>
+    <a href="#">Link 3</a>
+  </div>
+
+  <div class="content">
+    <h3>Campus Notices</h3>
+    <a href="Notice.html">Read Notice</a>
+    <p><strong>Computer Science</strong></p>
+
+    <ol>
+      <li>Haydee</li>
+      <li>Charlie</li>
+      <li>Ezekiel</li>
+      <li>Carlos</li>
+    </ol>
+    <ul>
+      <li>Haydee</li>
+      <li>Charlie</li>
+      <li>Ezekiel</li>
+      <li>Carlos</li>
+    </ul>
+    <img src="DmmmsuBuilding.jpg" alt="Computer Science Logo" width="400" height="200">
+  </div>
+
+  <div class="content1">
+    <img src="DmmmsuLogo.png" alt="Dmmmsu Logo" width="100" height="100">
+    <form action="/api/notices" method="post">
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" required>
+      <label for="msg">Message</label>
+      <textarea id="msg" name="msg" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <h4>Footer</h4>
+  </div>
+</div>
+</body>
+</html>
